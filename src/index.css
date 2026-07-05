@@ -1,0 +1,86 @@
+/* ===== Design Tokens ===== */
+:root {
+  /* Editorial refined palette (matching Lovable design) */
+  --background: #fafaf9;
+  --foreground: #1a1a1f;
+  --card: #fafaf9;
+  --card-foreground: #1a1a1f;
+  --primary: #1a1a1f;
+  --primary-foreground: #fafaf9;
+  --muted-foreground: #6b6b76;
+  --border: #e8e8e6;
+  --ring: #6b6b76;
+
+  /* Typography */
+  --font-display: 'Instrument Serif', serif;
+  --font-sans: 'Inter', sans-serif;
+
+  /* Radius */
+  --radius: 0.625rem;
+
+  /* Easing */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ===== Reset & Base ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: rgba(26, 26, 31, 0.06);
+}
+
+/* ===== Layout ===== */
+.container {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 3rem;
+  }
+}

@@ -1,0 +1,79 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  border-bottom: 1px solid transparent;
+  background: rgba(250, 250, 249, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: border-color 0.3s ease;
+}
+
+.navbar--scrolled {
+  border-bottom-color: rgba(26, 26, 31, 0.05);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+/* Logo — italic serif */
+.navbar__logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  transition: opacity 0.2s ease;
+}
+
+.navbar__logo:hover {
+  opacity: 0.7;
+}
+
+/* Links */
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar__link:hover {
+  color: var(--muted-foreground);
+}
+
+/* CTA pill */
+.navbar__cta {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 1rem;
+  border-radius: 50px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid var(--primary);
+  transition: transform 0.15s ease;
+}
+
+.navbar__cta:active {
+  transform: scale(0.95);
+}
+
+/* Mobile: hide links for now, we'll add hamburger in a later commit */
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none;
+  }
+}

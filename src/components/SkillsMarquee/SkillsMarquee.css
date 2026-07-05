@@ -1,0 +1,38 @@
+/* ===== Skills Marquee ===== */
+.marquee {
+  overflow: hidden;
+  border-top: 1px solid rgba(26, 26, 31, 0.05);
+  border-bottom: 1px solid rgba(26, 26, 31, 0.05);
+  padding: 3rem 0;
+}
+
+.marquee__track {
+  display: flex;
+  white-space: nowrap;
+}
+
+.marquee__content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 1.5rem;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee__item {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-style: italic;
+  color: rgba(26, 26, 31, 0.18);
+  flex-shrink: 0;
+  user-select: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
