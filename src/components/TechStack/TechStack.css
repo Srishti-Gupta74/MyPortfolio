@@ -1,0 +1,164 @@
+/* ===== Tech Stack Section ===== */
+.techstack {
+  padding: 6rem 0;
+  background-color: var(--background);
+  border-bottom: 1px solid rgba(26, 26, 31, 0.06);
+}
+
+@media (min-width: 1024px) {
+  .techstack {
+    padding: 8rem 0;
+  }
+}
+
+/* Header */
+.techstack__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid rgba(26, 26, 31, 0.08);
+}
+
+@media (min-width: 640px) {
+  .techstack__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.techstack__heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.techstack__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted-foreground);
+}
+
+/* Layout Grid */
+.techstack__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .techstack__grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 6rem;
+  }
+}
+
+.techstack__subheading {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+/* Core Technologies Grid */
+.techstack__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .techstack__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .techstack__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.techstack__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background-color: var(--card);
+  transition: all 0.25s var(--ease-out);
+}
+
+.techstack__item:hover {
+  border-color: rgba(26, 26, 31, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -8px rgba(26, 26, 31, 0.05);
+  background-color: #ffffff;
+}
+
+.techstack__name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--foreground);
+}
+
+.techstack__category {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Leveling Up Aside */
+.techstack__group--aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.techstack__intro {
+  color: var(--muted-foreground);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.techstack__tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.techstack__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background-color: rgba(26, 26, 31, 0.02);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--foreground);
+  transition: all 0.2s ease;
+}
+
+.techstack__tag:hover {
+  border-color: var(--foreground);
+  background-color: var(--card);
+}
+
+.techstack__tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--foreground);
+  opacity: 0.6;
+}

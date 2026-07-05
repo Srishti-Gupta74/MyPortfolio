@@ -15,9 +15,9 @@ const Hero = () => {
 
           <div className="hero__aside" id="about">
             <p className="hero__description" id="hero-description">
-              BTech CSE Sophomore at Manipal University Jaipur. Crafting
-              digital experiences with code, creativity, and a passion for
-              building things that matter.
+              BTech CSE '29 at Manipal University Jaipur. Passionate about
+              Artificial Intelligence, Cybersecurity, Web Development, and Open
+              Source — crafting secure, intelligent digital experiences that matter.
             </p>
 
             <div className="hero__actions" id="hero-actions">

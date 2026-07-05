@@ -50,7 +50,6 @@ const Projects = () => {
         {/* Header */}
         <div className="projects__header">
           <h2 className="projects__heading">Selected projects</h2>
-          <p className="projects__label">2024—2025 Archive</p>
         </div>
 
         {/* Project List */}

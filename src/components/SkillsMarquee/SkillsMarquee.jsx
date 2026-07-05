@@ -1,13 +1,22 @@
 import './SkillsMarquee.css';
 
 const skills = [
-  'C++',
   'Python',
+  'C',
+  'C++',
+  'JavaScript',
+  'HTML5',
+  'CSS3',
+  'Git',
+  'Linux',
+  'Firebase',
+  'Supabase',
+  'Artificial Intelligence',
+  'Data Structures & Algorithms',
+  'Cybersecurity',
   'Web Development',
-  'UI / UX Design',
-  'Data Structures',
-  'React',
-  'Problem Solving',
+  'Software Engineering',
+  'Open Source',
 ];
 
 const SkillsMarquee = () => {
