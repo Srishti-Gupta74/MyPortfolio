@@ -3,6 +3,7 @@ import Hero from './components/Hero/Hero';
 import SkillsMarquee from './components/SkillsMarquee/SkillsMarquee';
 import TechStack from './components/TechStack/TechStack';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <SkillsMarquee />
         <TechStack />
         <Projects />
+        <Contact />
       </main>
     </>
   );

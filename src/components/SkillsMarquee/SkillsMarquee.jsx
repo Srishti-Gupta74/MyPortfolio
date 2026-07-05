@@ -1,6 +1,8 @@
 import './SkillsMarquee.css';
 
 const skills = [
+  'Coding',
+  'Software Engineering',
   'Python',
   'C',
   'C++',
