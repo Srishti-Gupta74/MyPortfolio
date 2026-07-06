@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="hero" id="home">
       <div className="hero__content container">
         <div className="hero__grid">
-          <div className="hero__main">
+          <div className="hero__main reveal">
             <h1 className="hero__title" id="hero-title">
               Srishti Suman Gupta{' '}
               <span className="hero__title-accent">builds</span>{' '}
@@ -13,7 +13,7 @@ const Hero = () => {
             </h1>
           </div>
 
-          <div className="hero__aside" id="about">
+          <div className="hero__aside reveal reveal--delay-1" id="about">
             <p className="hero__description" id="hero-description">
               BTech CSE '29 at Manipal University Jaipur. Passionate about
               Software Engineering, Coding, Artificial Intelligence, Cybersecurity,

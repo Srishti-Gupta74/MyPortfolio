@@ -5,7 +5,7 @@ const Contact = () => {
     <footer className="contact" id="contact">
       <div className="contact__content container">
         {/* Dark Card */}
-        <div className="contact__card">
+        <div className="contact__card reveal">
           <div className="contact__card-inner">
             <h2 className="contact__heading">
               Let&apos;s create something meaningful.
@@ -24,7 +24,7 @@ const Contact = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="contact__bottom">
+        <div className="contact__bottom reveal reveal--delay-1">
           <p className="contact__copyright">
             &copy; {new Date().getFullYear()} Srishti Suman Gupta
           </p>

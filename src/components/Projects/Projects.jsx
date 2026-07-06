@@ -48,7 +48,7 @@ const Projects = () => {
     <section className="projects" id="projects">
       <div className="projects__content container">
         {/* Header */}
-        <div className="projects__header">
+        <div className="projects__header reveal">
           <h2 className="projects__heading">Selected projects</h2>
         </div>
 
@@ -59,7 +59,7 @@ const Projects = () => {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="projects__card"
+              className="projects__card reveal"
               key={project.id}
             >
               <div className="projects__card-top">

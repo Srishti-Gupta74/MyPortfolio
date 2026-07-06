@@ -27,12 +27,12 @@ const TechStack = () => {
     <section className="techstack" id="stack">
       <div className="techstack__content container">
         {/* Header */}
-        <div className="techstack__header">
+        <div className="techstack__header reveal">
           <h2 className="techstack__heading">Tech Arsenal</h2>
           <p className="techstack__label">Tools & Capabilities</p>
         </div>
 
-        <div className="techstack__grid">
+        <div className="techstack__grid reveal reveal--delay-1">
           {/* Tech Arsenal Grid */}
           <div className="techstack__group">
             <h3 className="techstack__subheading">Core Technologies</h3>

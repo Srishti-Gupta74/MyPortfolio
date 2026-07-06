@@ -1,0 +1,166 @@
+/* ===== Experience & Education Section ===== */
+.experience {
+  padding: 6rem 0;
+  background-color: var(--background);
+  border-bottom: 1px solid rgba(26, 26, 31, 0.06);
+}
+
+@media (min-width: 1024px) {
+  .experience {
+    padding: 8rem 0;
+  }
+}
+
+/* Header */
+.experience__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid rgba(26, 26, 31, 0.08);
+}
+
+@media (min-width: 640px) {
+  .experience__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.experience__heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.experience__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted-foreground);
+}
+
+/* ===== Timeline Container ===== */
+.experience__timeline {
+  position: relative;
+  max-width: 56rem;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(26, 26, 31, 0.15);
+}
+
+@media (min-width: 768px) {
+  .experience__timeline {
+    padding-left: 3.5rem;
+  }
+}
+
+/* Timeline Item */
+.experience__item {
+  position: relative;
+  padding-bottom: 3.5rem;
+}
+
+.experience__item:last-child {
+  padding-bottom: 0;
+}
+
+/* Timeline Dot / Node */
+.experience__dot {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.35rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: var(--background);
+  border: 2px solid var(--foreground);
+  transform: translateX(-50%);
+  transition: all 0.7s var(--ease-out);
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .experience__dot {
+    left: -3.5rem;
+    width: 13px;
+    height: 13px;
+  }
+}
+
+.experience__item:hover .experience__dot {
+  background-color: var(--foreground);
+  transform: translateX(-50%) scale(1.3);
+  box-shadow: 0 0 0 4px rgba(26, 26, 31, 0.08);
+}
+
+/* Content Box */
+.experience__content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: transform 0.7s var(--ease-out);
+}
+
+.experience__item:hover .experience__content-box {
+  transform: translateX(6px);
+}
+
+/* Meta */
+.experience__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.experience__period {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--foreground);
+  letter-spacing: 0.02em;
+}
+
+.experience__type {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted-foreground);
+  font-weight: 600;
+  padding: 0.15rem 0.65rem;
+  border-radius: 9999px;
+  background: rgba(26, 26, 31, 0.05);
+}
+
+/* Role & Organization */
+.experience__role {
+  font-family: var(--font-sans);
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  color: var(--foreground);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.experience__org {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  color: var(--muted-foreground);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.experience__desc {
+  font-size: 0.95rem;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  max-width: 65ch;
+  text-wrap: pretty;
+}

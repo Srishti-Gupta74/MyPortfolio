@@ -73,7 +73,7 @@
   background-color: var(--background);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   text-decoration: none;
   color: inherit;
   position: relative;
@@ -81,9 +81,9 @@
 }
 
 .projects__card:hover {
-  border-color: rgba(26, 26, 31, 0.3);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px -10px rgba(26, 26, 31, 0.06);
+  border-color: var(--foreground);
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -12px rgba(26, 26, 31, 0.12);
   background-color: #ffffff;
 }
 
