@@ -11,6 +11,17 @@ const achievements = [
     certificate: '/confluence-cert.jpg',
     linkedin: 'https://lnkd.in/p/dTc2tQJj',
   },
+  {
+    id: '02',
+    title: 'Finalist — National Secure AI Software & Systems Hackathon',
+    organization: 'IIT Madras × BITS Goa (ISEA Phase-III) · Blue Team Challenge',
+    date: 'July 2026',
+    description:
+      'Selected as a Finalist among 300+ teams at a National-level Cybersecurity & AI Innovation Hackathon. Engineered ForgeShield, an AI-powered document forgery detection system featuring a 6-layer forensic analysis pipeline with Gemini Vision and SHA-256 Merkle root audit trails.',
+    certificate: '/iit-madras-cert.jpg',
+    linkedin:
+      'https://www.linkedin.com/posts/activity-7467806899111927808-Uv8v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
+  },
 ];
 
 const Achievements = () => {
