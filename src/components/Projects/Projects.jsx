@@ -26,6 +26,7 @@ const projects = [
     tech: ['JavaScript', 'HTML', 'CSS'],
     github: 'https://github.com/Srishti-Gupta74/InterviewSim',
     live: 'https://interview-sim-eta.vercel.app/',
+    video: 'https://youtu.be/bBofdpzKsHk',
   },
   {
     id: '04',
@@ -35,6 +36,7 @@ const projects = [
     tech: ['Python', 'Gemini AI'],
     github: 'https://github.com/Srishti-Gupta74/Spooky',
     live: 'https://spooky-blue.vercel.app/',
+    video: 'https://youtu.be/uWbJxuC943M',
   },
   {
     id: '05',
@@ -93,6 +95,16 @@ const Projects = () => {
                       className="projects__link"
                     >
                       Visit Site <span>↗</span>
+                    </a>
+                  )}
+                  {project.video && (
+                    <a
+                      href={project.video}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="projects__link"
+                    >
+                      Watch Demo <span>↗</span>
                     </a>
                   )}
                   {project.github && (
