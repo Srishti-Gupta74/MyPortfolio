@@ -6,6 +6,7 @@ import Experience from './components/Experience/Experience';
 import TechStack from './components/TechStack/TechStack';
 import Projects from './components/Projects/Projects';
 import Achievements from './components/Achievements/Achievements';
+import Certifications from './components/Certifications/Certifications';
 import Contact from './components/Contact/Contact';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <TechStack />
         <Projects />
         <Achievements />
+        <Certifications />
         <Contact />
       </main>
     </>

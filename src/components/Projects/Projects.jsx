@@ -5,10 +5,11 @@ const projects = [
     id: '01',
     title: 'CyberSiksha',
     description:
-      'Gamified scam interception platform for Gen-Z with accessible AI protection for elders. Features interactive quiz arenas, family defense grids, and a Gemini-powered cyber companion.',
+      'Cybersecurity awareness and education platform designed especially for children and the elderly. Features bite-sized cyber lessons, gamified quizzes, a family dashboard, and AI threat simulation.',
     tech: ['Next.js', 'React', 'Supabase', 'Gemini AI'],
     github: 'https://github.com/Srishti-Gupta74/CyberSiksha',
     live: 'https://cyber-siksha.vercel.app/',
+    video: 'https://youtu.be/osFoCaGa9Wc',
   },
   {
     id: '02',

@@ -21,6 +21,7 @@ const Navbar = () => {
           <a href="#skills" className="navbar__link">Skills</a>
           <a href="#projects" className="navbar__link">Projects</a>
           <a href="#achievements" className="navbar__link">Achievements</a>
+          <a href="#certifications" className="navbar__link">Certifications</a>
           <a href="#contact" className="navbar__cta" id="navbar-cta">Contact</a>
         </div>
       </div>

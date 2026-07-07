@@ -6,18 +6,27 @@ const achievements = [
     title: 'Rank 42 — Confluence 2.0 International Innovation Hackathon',
     organization: 'SRMIST (The Helper) · Cybersecurity & Threat Intelligence',
     date: 'June 2026',
-    description:
-      'Competed among 2,500+ participants and 500+ teams in an intense 81-hour international hackathon sprint. Advanced through 3 highly competitive elimination rounds of prototype pitching and feedback, securing Rank 42 (Top 100 Participant) for building CyberSiksha.',
+    description: 'International innovation hackathon sprint among 2,500+ participants and 500+ teams.',
+    highlights: [
+      'Advanced through 3 rigorous elimination rounds of prototype pitching and real-time leaderboard evaluation.',
+      'Secured Rank 42 (Top 100 Participant) out of 500+ teams by building CyberSiksha, a cybersecurity awareness and education platform designed especially for children and the elderly.',
+      'Engineered bite-sized cyber lessons, gamified quizzes, a family dashboard, and AI threat simulation features in an intense 81-hour sprint.',
+    ],
     certificate: '/confluence-cert.jpg',
     linkedin: 'https://lnkd.in/p/dTc2tQJj',
+    video: 'https://youtu.be/osFoCaGa9Wc',
   },
   {
     id: '02',
     title: 'Finalist — National Secure AI Software & Systems Hackathon',
     organization: 'IIT Madras × BITS Goa (ISEA Phase-III) · Blue Team Challenge',
     date: 'July 2026',
-    description:
-      'Selected as a Finalist among 300+ teams at a National-level Cybersecurity & AI Innovation Hackathon. Engineered ForgeShield, an AI-powered document forgery detection system featuring a 6-layer forensic analysis pipeline with Gemini Vision and SHA-256 Merkle root audit trails.',
+    description: 'National-level Cybersecurity & AI Innovation Hackathon under the ISEA Phase-III initiative.',
+    highlights: [
+      'Selected as a Finalist among 300+ competing teams in the Blue Team Challenge (Document Forgery Detection).',
+      'Engineered ForgeShield, a full-stack AI system featuring a 6-layer forensic analysis pipeline.',
+      'Integrated Google Gemini Vision OCR, signature verification, and SHA-256 Merkle root blockchain audit trails.',
+    ],
     certificate: '/iit-madras-cert.jpg',
     linkedin:
       'https://www.linkedin.com/posts/activity-7467806899111927808-Uv8v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
@@ -25,10 +34,14 @@ const achievements = [
   {
     id: '03',
     title: 'Participant — WebForge Smart Campus Webathon',
-    organization: 'IEEE CIS MUJ · Manipal University Jaipur (Unstop)',
+    organization: 'IEEE CIS MUJ · Manipal University Jaipur',
     date: 'May 2026',
-    description:
-      'Competed solo to architect and deploy DeskGuard, a smart library seat management system, from scratch in under 12 hours. Focused on high user retention and solving campus seat hoarding with real-time QR booking and an integrated study companion.',
+    description: 'Smart campus webathon organized by IEEE CIS MUJ at Manipal University Jaipur.',
+    highlights: [
+      'Architected and deployed DeskGuard, a smart library seat management system, solo in under 12 hours.',
+      'Solved campus seat hoarding using real-time QR booking, automated occupancy tracking, and admin controls.',
+      'Integrated a built-in Lo-Fi study music player and sleek neon UI to drive student retention.',
+    ],
     certificate: '/webforge-cert.jpg',
     linkedin:
       'https://www.linkedin.com/posts/activity-7477239105538584577-zt23?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
@@ -60,7 +73,20 @@ const Achievements = () => {
                 <h3 className="achievements__title">{item.title}</h3>
               </div>
 
-              <p className="achievements__description">{item.description}</p>
+              {item.description && (
+                <p className="achievements__description">{item.description}</p>
+              )}
+
+              {item.highlights && (
+                <ul className="achievements__highlights">
+                  {item.highlights.map((point, idx) => (
+                    <li key={idx} className="achievements__highlight-item">
+                      <span className="achievements__bullet">▸</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               <div className="achievements__divider"></div>
 
@@ -74,6 +100,16 @@ const Achievements = () => {
                       className="achievements__link"
                     >
                       View Certificate <span>↗</span>
+                    </a>
+                  )}
+                  {item.video && (
+                    <a
+                      href={item.video}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="achievements__link"
+                    >
+                      Watch Demo <span>↗</span>
                     </a>
                   )}
                   {item.linkedin && (
