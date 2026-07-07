@@ -34,7 +34,7 @@ const experiences = [
     period: 'May 2026 — Present',
     type: 'Experience',
     description:
-      'Contributing to open-source software projects, peer reviews, and collaborative development under GSSoC.',
+      'Mastered core Git & GitHub workflows, version control commands, branching strategies, and collaborative open-source development through hands-on contributions and peer code reviews.',
   },
   {
     id: '05',

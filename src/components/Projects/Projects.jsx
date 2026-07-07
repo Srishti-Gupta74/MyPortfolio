@@ -8,6 +8,7 @@ const projects = [
       'Gamified scam interception platform for Gen-Z with accessible AI protection for elders. Features interactive quiz arenas, family defense grids, and a Gemini-powered cyber companion.',
     tech: ['Next.js', 'React', 'Supabase', 'Gemini AI'],
     github: 'https://github.com/Srishti-Gupta74/CyberSiksha',
+    live: 'https://cyber-siksha.vercel.app/',
   },
   {
     id: '02',
