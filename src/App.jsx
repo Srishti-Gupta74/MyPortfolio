@@ -5,6 +5,7 @@ import SkillsMarquee from './components/SkillsMarquee/SkillsMarquee';
 import Experience from './components/Experience/Experience';
 import TechStack from './components/TechStack/TechStack';
 import Projects from './components/Projects/Projects';
+import Achievements from './components/Achievements/Achievements';
 import Contact from './components/Contact/Contact';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Experience />
         <TechStack />
         <Projects />
+        <Achievements />
         <Contact />
       </main>
     </>

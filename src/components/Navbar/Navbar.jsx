@@ -20,6 +20,7 @@ const Navbar = () => {
           <a href="#about" className="navbar__link">About</a>
           <a href="#skills" className="navbar__link">Skills</a>
           <a href="#projects" className="navbar__link">Projects</a>
+          <a href="#achievements" className="navbar__link">Achievements</a>
           <a href="#contact" className="navbar__cta" id="navbar-cta">Contact</a>
         </div>
       </div>
