@@ -34,6 +34,7 @@ const projects = [
       'Multimodal AI cybersecurity guardian that monitors your screen in real time, runs OCR to detect suspicious keywords, and triggers fullscreen alerts for phishing.',
     tech: ['Python', 'Gemini AI'],
     github: 'https://github.com/Srishti-Gupta74/Spooky',
+    live: 'https://spooky-blue.vercel.app/',
   },
   {
     id: '05',
