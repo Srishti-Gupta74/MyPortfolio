@@ -24,6 +24,7 @@ const projects = [
       'AI-powered mock interview simulator that helps users prepare for technical and behavioral interviews with instant feedback and real scenarios.',
     tech: ['JavaScript', 'HTML', 'CSS'],
     github: 'https://github.com/Srishti-Gupta74/InterviewSim',
+    live: 'https://interview-sim-eta.vercel.app/',
   },
   {
     id: '04',
@@ -55,31 +56,55 @@ const Projects = () => {
         {/* Project List */}
         <div className="projects__list">
           {projects.map((project) => (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
               className="projects__card reveal"
               key={project.id}
             >
+              {/* Giant Watermark Number */}
+              <span className="projects__watermark">{project.id}</span>
+
+              {/* Card Top */}
               <div className="projects__card-top">
-                <span className="projects__number">{project.id}</span>
+                <span className="projects__label">PROJECT / {project.id}</span>
                 <h3 className="projects__title">{project.title}</h3>
               </div>
+
               <p className="projects__description">{project.description}</p>
+
+              {/* Divider */}
+              <div className="projects__divider"></div>
+
+              {/* Card Bottom */}
               <div className="projects__card-bottom">
                 <div className="projects__tech">
                   {project.tech.map((t) => (
                     <span className="projects__tag" key={t}>{t}</span>
                   ))}
                 </div>
-                <span className="projects__arrow">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M7 17L17 7M17 7H7M17 7v10" />
-                  </svg>
-                </span>
+                <div className="projects__links">
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="projects__link"
+                    >
+                      Visit Site <span>↗</span>
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="projects__link"
+                    >
+                      GitHub <span>↗</span>
+                    </a>
+                  )}
+                </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
