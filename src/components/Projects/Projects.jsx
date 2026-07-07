@@ -41,6 +41,7 @@ const projects = [
       'Smart library seat management system with QR-based seat booking, real-time occupancy tracking, and automated seat recovery to solve seat hoarding.',
     tech: ['TypeScript', 'React', 'CSS'],
     github: 'https://github.com/Srishti-Gupta74/deskguard',
+    live: 'https://deskguard-lovat.vercel.app/',
   },
 ];
 
