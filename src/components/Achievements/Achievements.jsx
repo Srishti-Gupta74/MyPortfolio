@@ -22,6 +22,17 @@ const achievements = [
     linkedin:
       'https://www.linkedin.com/posts/activity-7467806899111927808-Uv8v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
   },
+  {
+    id: '03',
+    title: 'Participant — WebForge Smart Campus Webathon',
+    organization: 'IEEE CIS MUJ · Manipal University Jaipur (Unstop)',
+    date: 'May 2026',
+    description:
+      'Competed solo to architect and deploy DeskGuard, a smart library seat management system, from scratch in under 12 hours. Focused on high user retention and solving campus seat hoarding with real-time QR booking and an integrated study companion.',
+    certificate: '/webforge-cert.jpg',
+    linkedin:
+      'https://www.linkedin.com/posts/activity-7477239105538584577-zt23?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
+  },
 ];
 
 const Achievements = () => {
