@@ -14,9 +14,6 @@ const Contact = () => {
               Open to opportunities where design excellence and technical
               rigor come together, always happy to collaborate.
             </p>
-            <p className="contact__philosophy" style={{ fontStyle: 'italic', fontSize: '0.95rem', color: '#B0B0A8', margin: '1rem 0 1.5rem', borderLeft: '1px solid #B0B0A8', paddingLeft: '1rem' }}>
-              &ldquo;If I don&apos;t know it now, doesn&apos;t mean I never will. I&apos;ll figure it out and get stuff done.&rdquo;
-            </p>
             <a
               href="mailto:srishti7341gupta.74sg@gmail.com"
               className="contact__email"
