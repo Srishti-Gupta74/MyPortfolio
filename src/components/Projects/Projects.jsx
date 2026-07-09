@@ -13,24 +13,16 @@ const projects = [
   },
   {
     id: '02',
-    title: 'ForgeShield',
+    title: 'DeskGuard',
     description:
-      'Forgery detection & document authentication tool. Uses image analysis techniques to identify inconsistencies and protect against digital forgery.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/Srishti-Gupta74/ForgeShield',
+      'Smart library seat management system with QR-based seat booking, real-time occupancy tracking, and automated seat recovery to solve seat hoarding.',
+    tech: ['TypeScript', 'React', 'CSS'],
+    github: 'https://github.com/Srishti-Gupta74/deskguard',
+    live: 'https://deskguard-lovat.vercel.app/',
+    video: 'https://youtu.be/HmawrT7Bu8g?si=mJZCg-p-RpNxfjU6',
   },
   {
     id: '03',
-    title: 'InterviewSim',
-    description:
-      'AI-powered mock interview simulator that helps users prepare for technical and behavioral interviews with instant feedback and real scenarios.',
-    tech: ['JavaScript', 'HTML', 'CSS'],
-    github: 'https://github.com/Srishti-Gupta74/InterviewSim',
-    live: 'https://interview-sim-eta.vercel.app/',
-    video: 'https://youtu.be/bBofdpzKsHk',
-  },
-  {
-    id: '04',
     title: 'Spooky',
     description:
       'Multimodal AI cybersecurity guardian that monitors your screen in real time, runs OCR to detect suspicious keywords, and triggers fullscreen alerts for phishing.',
@@ -41,13 +33,22 @@ const projects = [
     devpost: 'https://share.google/l6LNxiuy9AvKGZQrF',
   },
   {
-    id: '05',
-    title: 'DeskGuard',
+    id: '04',
+    title: 'InterviewSim',
     description:
-      'Smart library seat management system with QR-based seat booking, real-time occupancy tracking, and automated seat recovery to solve seat hoarding.',
-    tech: ['TypeScript', 'React', 'CSS'],
-    github: 'https://github.com/Srishti-Gupta74/deskguard',
-    live: 'https://deskguard-lovat.vercel.app/',
+      'AI-powered mock interview simulator that helps users prepare for technical and behavioral interviews with instant feedback and real scenarios.',
+    tech: ['JavaScript', 'HTML', 'CSS'],
+    github: 'https://github.com/Srishti-Gupta74/InterviewSim',
+    live: 'https://interview-sim-eta.vercel.app/',
+    video: 'https://youtu.be/bBofdpzKsHk',
+  },
+  {
+    id: '05',
+    title: 'ForgeShield',
+    description:
+      'Forgery detection & document authentication tool. Uses image analysis techniques to identify inconsistencies and protect against digital forgery.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/Srishti-Gupta74/ForgeShield',
   },
 ];
 

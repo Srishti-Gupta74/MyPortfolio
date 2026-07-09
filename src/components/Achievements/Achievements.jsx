@@ -14,6 +14,8 @@ const achievements = [
       'Successfully balanced top-tier academic performance with rigorous nationwide hackathon podium finishes and solo full-stack engineering.',
     ],
     certificate: '/deans-list-cert.jpg',
+    linkedin:
+      'https://www.linkedin.com/posts/activity-7448338774008446976-XD-C?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
   },
   {
     id: '02',
@@ -27,9 +29,6 @@ const achievements = [
       'Architected SupplyShield AI, an Adaptive Conformal Risk Triage system (Gibbs & Candès ACI) designed to protect essential goods (food, medicine, emergency materials) during sudden demand shocks.',
       'Engineered calibrated confidence bounds and an automated Forecast Reliability Score (0–100) to replace static point predictions for downstream inventory directives.',
     ],
-    architecture: '/supplyshield-architecture.png',
-    unstop:
-      'https://unstop.com/o/UNtyVfK?lb=vh1cghwj&utm_medium=Share&utm_source=online_coding_challenge&utm_campaign=Srishtiz32356',
   },
   {
     id: '03',
@@ -37,9 +36,9 @@ const achievements = [
     title: 'Rank 42 — Confluence 2.0 International Innovation Hackathon',
     organization: 'SRMIST (The Helper) · Cybersecurity & Threat Intelligence',
     date: 'June 2026',
-    description: 'International innovation hackathon sprint among 2,500+ participants and 500+ teams.',
+    description: 'International innovation hackathon sprint among 2,500+ participants and 500+ teams where we advanced to Round 3 out of 5 rounds.',
     highlights: [
-      'Advanced through 3 rigorous elimination rounds of prototype pitching and real-time leaderboard evaluation.',
+      'Advanced to Round 3 out of 5 rigorous elimination rounds of prototype pitching and real-time leaderboard evaluation.',
       'Secured Rank 42 (Top 100 Participant) out of 500+ teams by building CyberSiksha, a cybersecurity awareness and education platform designed especially for children and the elderly.',
       'Engineered bite-sized cyber lessons, gamified quizzes, a family dashboard, and AI threat simulation features in an intense 81-hour sprint.',
     ],
@@ -76,6 +75,7 @@ const achievements = [
       'Integrated a built-in Lo-Fi study music player and sleek neon UI to drive student retention.',
     ],
     certificate: '/webforge-cert.jpg',
+    video: 'https://youtu.be/HmawrT7Bu8g?si=mJZCg-p-RpNxfjU6',
     linkedin:
       'https://www.linkedin.com/posts/activity-7477239105538584577-zt23?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
   },
@@ -102,15 +102,8 @@ const Achievements = () => {
       <div className="achievements__content container">
         {/* Editorial Header */}
         <div className="achievements__header reveal">
-          <div className="achievements__header-top">
-            <span className="achievements__header-accent-line"></span>
-            <span className="achievements__label">DISTINCTIONS & HONORS</span>
-          </div>
+          <span className="achievements__label">MILESTONES & HONORS</span>
           <h2 className="achievements__heading">Achievements</h2>
-          <p className="achievements__subheading">
-            A curated timeline of academic excellence, research contributions, and
-            competitive technical milestones achieved through rigorous inquiry and engineering.
-          </p>
         </div>
 
         {/* Horizontal Timeline Rows */}
@@ -137,7 +130,7 @@ const Achievements = () => {
                   <ul className="achievements__row-highlights">
                     {item.highlights.map((point, idx) => (
                       <li key={idx} className="achievements__row-highlight-item">
-                        <span className="achievements__dot">●</span>
+                        <span className="achievements__dot">·</span>
                         <span>{point}</span>
                       </li>
                     ))}
@@ -154,26 +147,6 @@ const Achievements = () => {
                       className="achievements__link-btn"
                     >
                       VIEW CERTIFICATE <span>↗</span>
-                    </a>
-                  )}
-                  {item.architecture && (
-                    <a
-                      href={item.architecture}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="achievements__link-btn"
-                    >
-                      SYSTEM ARCHITECTURE <span>↗</span>
-                    </a>
-                  )}
-                  {item.unstop && (
-                    <a
-                      href={item.unstop}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="achievements__link-btn"
-                    >
-                      OFFICIAL LEADERBOARD <span>↗</span>
                     </a>
                   )}
                   {item.devpost && (

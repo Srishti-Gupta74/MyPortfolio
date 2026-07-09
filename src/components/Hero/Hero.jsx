@@ -21,6 +21,12 @@ const Hero = () => {
               digital experiences that matter.
             </p>
 
+            <div className="hero__quote-box">
+              <p className="hero__quote-text">
+                &ldquo;If I don&apos;t know it now, doesn&apos;t mean I never will. I&apos;ll figure it out and get stuff done.&rdquo;
+              </p>
+            </div>
+
             <div className="hero__actions" id="hero-actions">
               <a href="#projects" className="hero__btn hero__btn--primary">
                 <span className="hero__btn-icon">
