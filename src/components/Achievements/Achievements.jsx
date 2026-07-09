@@ -3,6 +3,21 @@ import './Achievements.css';
 const achievements = [
   {
     id: '01',
+    title: 'Rank 2 (Runner-Up) — AI for Public Good: Sustainable & Resilient Supply Chains Hackathon',
+    organization: 'Indo-Swiss Research Grant · ETH Zurich × Univ. of Lausanne × IIIT Allahabad × Manipal University Jaipur',
+    date: 'June 2026',
+    description: 'Hackathon organized under the Indo-Swiss Research Grant in collaboration with researchers from ETH Zurich, University of Lausanne, IIIT Allahabad, Manipal University Jaipur, and WikiClub Tech.',
+    highlights: [
+      'Secured Rank 2 (National Runner-Up) for Problem Statement 2: Calibrated Uncertainty Quantification for Supply Chain Risk Triage.',
+      'Architected SupplyShield AI, an Adaptive Conformal Risk Triage system (Gibbs & Candès ACI) designed to protect essential goods (food, medicine, emergency materials) during sudden demand shocks.',
+      'Engineered calibrated confidence bounds and an automated Forecast Reliability Score (0–100) to replace static point predictions for downstream inventory directives.',
+    ],
+    architecture: '/supplyshield-architecture.png',
+    unstop:
+      'https://unstop.com/o/UNtyVfK?lb=vh1cghwj&utm_medium=Share&utm_source=online_coding_challenge&utm_campaign=Srishtiz32356',
+  },
+  {
+    id: '02',
     title: 'Rank 42 — Confluence 2.0 International Innovation Hackathon',
     organization: 'SRMIST (The Helper) · Cybersecurity & Threat Intelligence',
     date: 'June 2026',
@@ -17,7 +32,7 @@ const achievements = [
     video: 'https://youtu.be/osFoCaGa9Wc',
   },
   {
-    id: '02',
+    id: '03',
     title: 'Finalist — National Secure AI Software & Systems Hackathon',
     organization: 'IIT Madras × BITS Goa (ISEA Phase-III) · Blue Team Challenge',
     date: 'July 2026',
@@ -32,7 +47,7 @@ const achievements = [
       'https://www.linkedin.com/posts/activity-7467806899111927808-Uv8v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
   },
   {
-    id: '03',
+    id: '04',
     title: 'Participant — WebForge Smart Campus Webathon',
     organization: 'IEEE CIS MUJ · Manipal University Jaipur',
     date: 'May 2026',
@@ -102,6 +117,16 @@ const Achievements = () => {
                       View Certificate <span>↗</span>
                     </a>
                   )}
+                  {item.architecture && (
+                    <a
+                      href={item.architecture}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="achievements__link"
+                    >
+                      System Architecture <span>↗</span>
+                    </a>
+                  )}
                   {item.video && (
                     <a
                       href={item.video}
@@ -110,6 +135,16 @@ const Achievements = () => {
                       className="achievements__link"
                     >
                       Watch Demo <span>↗</span>
+                    </a>
+                  )}
+                  {item.unstop && (
+                    <a
+                      href={item.unstop}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="achievements__link"
+                    >
+                      Official Leaderboard <span>↗</span>
                     </a>
                   )}
                   {item.linkedin && (
