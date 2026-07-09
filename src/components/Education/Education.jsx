@@ -19,7 +19,7 @@ const educationList = [
     title: 'Class 12th — ISC Boards (PCMB)',
     institution: 'St. Francis School',
     period: '2025',
-    grade: '93.5% Aggregate',
+    grade: '93.5% Boards',
     highlights: [
       'Core Science Specialization: Physics, Chemistry, Mathematics, and Biology (PCMB).',
     ],
@@ -30,9 +30,9 @@ const educationList = [
     title: 'Class 10th — ICSE Boards',
     institution: 'St. Charles School',
     period: '2023',
-    grade: '94.4% Aggregate',
+    grade: '94.4% Boards',
     highlights: [
-      'Secured 94.4% aggregate in the ICSE Class 10th Board Examinations.',
+      'Secured 94.4% in the ICSE Class 10th Board Examinations.',
     ],
   },
 ];
@@ -61,16 +61,12 @@ const Education = () => {
                   <span className="education__row-period">{item.period}</span>
                 </div>
 
-                <div className="education__header-split">
-                  <h3 className="education__row-title">{item.title}</h3>
-                  <span className="education__grade-pill">{item.grade}</span>
-                </div>
-
+                <h3 className="education__row-title">{item.title}</h3>
                 <h4 className="education__institution">{item.institution}</h4>
 
-                {item.description && (
-                  <p className="education__row-desc">{item.description}</p>
-                )}
+                <div className="education__grade-wrapper">
+                  <span className="education__grade-pill">{item.grade}</span>
+                </div>
 
                 {item.highlights && (
                   <ul className="education__row-highlights">
