@@ -21,9 +21,8 @@
 
 @media (min-width: 640px) {
   .projects__header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

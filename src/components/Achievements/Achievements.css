@@ -48,11 +48,31 @@
   grid-template-columns: 160px 1fr;
   border-bottom: 1px solid #ededeb;
   align-items: stretch;
-  transition: background-color 0.4s ease;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.achievements__row::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #1a1a1f;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 2;
+}
+
+.achievements__row:hover::after {
+  width: 100%;
 }
 
 .achievements__row:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #fcfcfb;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px -16px rgba(26, 26, 31, 0.05);
 }
 
 /* 1. Left Vertical Rail Index Number (`01`, `02`...) */
@@ -72,7 +92,8 @@
 }
 
 .achievements__row:hover .achievements__row-number {
-  transform: translateY(-4px);
+  transform: scale(1.05) translateY(-4px);
+  color: #000000;
 }
 
 /* 2. Main Center Content */
@@ -117,6 +138,12 @@
   line-height: 1.25;
   letter-spacing: -0.01em;
   margin-bottom: 1rem;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+}
+
+.achievements__row:hover .achievements__row-title {
+  transform: translateX(8px);
+  color: #000000;
 }
 
 .achievements__row-desc {

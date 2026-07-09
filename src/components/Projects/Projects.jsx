@@ -58,7 +58,8 @@ const Projects = () => {
       <div className="projects__content container">
         {/* Header */}
         <div className="projects__header reveal">
-          <h2 className="projects__heading">Selected projects</h2>
+          <span className="projects__label" style={{ fontFamily: 'var(--font-sans)', fontSize: '0.68rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.22em', color: '#b0b0a8', marginBottom: '0.6rem', display: 'block' }}>BUILT CRAFT & SYSTEMS</span>
+          <h2 className="projects__heading">Projects</h2>
         </div>
 
         {/* Project List */}

@@ -2,10 +2,12 @@ import './SkillsMarquee.css';
 
 const skills = [
   'Software Engineering',
+  'Generative AI & LLMs',
   'Web Development',
   'Data Structures & Algorithms',
   'Artificial Intelligence',
   'Cybersecurity',
+  'Prompt Engineering',
   'Open Source',
   'Python',
   'C',

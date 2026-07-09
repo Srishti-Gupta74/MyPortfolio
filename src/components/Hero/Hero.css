@@ -35,10 +35,38 @@
   text-wrap: balance;
 }
 
+.hero__float-group {
+  display: inline-block;
+  animation: floatGroup 5.2s ease-in-out infinite;
+  filter: drop-shadow(0 12px 18px rgba(26, 26, 31, 0.12));
+}
+
+@keyframes floatGroup {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-0.8deg);
+  }
+}
+
 .hero__title-accent {
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
-  color: rgba(26, 26, 31, 0.25);
+  display: inline-block;
+  color: #1a1a1f;
+  background: linear-gradient(135deg, #1a1a1f 0%, #8c8c92 50%, #1a1a1f 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShine 4s linear infinite;
+  padding: 0 0.12em;
+}
+
+@keyframes textShine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 /* Aside — bio + buttons */
@@ -53,30 +81,39 @@
 }
 
 .hero__description {
-  max-width: 35ch;
-  font-size: 1.125rem;
-  line-height: 1.6;
+  max-width: 42ch;
+  font-size: 1.1rem;
+  line-height: 1.65;
   color: var(--muted-foreground);
   text-wrap: pretty;
 }
 
-/* Signature Mindset Quote */
+.hero__description-italic {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #55555c;
+}
+
+/* Signature Mindset Quote (Minimalist Editorial Rail - No Gray Box!) */
 .hero__quote-box {
-  margin: 1.5rem 0 0.5rem 0;
-  padding: 1.15rem 1.5rem;
-  border-left: 3px solid #1a1a1f;
-  background-color: #f3f3f1;
-  border-radius: 0 8px 8px 0;
-  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.04);
+  margin: 2.5rem 0 1.5rem 0;
+  padding: 0.25rem 0 0.25rem 1.5rem;
+  border-left: 2px solid #1a1a1f;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .hero__quote-text {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.25rem;
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
   color: #1a1a1f;
-  line-height: 1.45;
+  line-height: 1.35;
   margin: 0;
+  max-width: 34ch;
+  letter-spacing: -0.01em;
 }
 
 /* Action buttons */
@@ -84,48 +121,51 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .hero__btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  height: 38px;
-  padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+  justify-content: center;
+  height: 44px;
+  padding: 0 1.6rem;
   border-radius: 50px;
-  font-size: 0.875rem;
+  font-size: 0.92rem;
   font-weight: 500;
-  transition: transform 0.15s ease, background-color 0.2s ease;
+  letter-spacing: 0.01em;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.hero__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -8px rgba(26, 26, 31, 0.2);
 }
 
 .hero__btn:active {
-  transform: scale(0.95);
+  transform: scale(0.96);
 }
 
 .hero__btn-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.5rem;
-  flex-shrink: 0;
+  display: none;
 }
 
 .hero__btn--primary {
-  background: var(--primary);
-  color: var(--primary-foreground);
-  border: 1px solid var(--primary);
+  background: #1a1a1f;
+  color: #ffffff;
+  border: 1px solid #1a1a1f;
 }
 
 .hero__btn--secondary {
-  background: var(--background);
-  color: var(--foreground);
-  border: 1px solid rgba(26, 26, 31, 0.1);
+  background: #ffffff;
+  color: #1a1a1f;
+  border: 1px solid #e0e0de;
 }
 
 .hero__btn--secondary:hover {
-  background: rgba(26, 26, 31, 0.04);
+  background: #fcfcfb;
+  border-color: #1a1a1f;
 }
 
 /* ===== Entrance Animation ===== */

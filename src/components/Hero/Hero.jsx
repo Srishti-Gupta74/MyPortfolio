@@ -1,3 +1,4 @@
+import React from 'react';
 import './Hero.css';
 
 const Hero = () => {
@@ -17,13 +18,18 @@ const Hero = () => {
             <p className="hero__description" id="hero-description">
               BTech CSE '29 at Manipal University Jaipur. Passionate about
               Software Engineering, Coding, Artificial Intelligence, Cybersecurity,
-              Web Development, and Open Source — crafting secure, intelligent
-              digital experiences that matter.
+              Web Development, and Open Source{' '}
+              <span className="hero__description-italic">
+                — crafting secure, intelligent digital experiences that matter.
+              </span>
             </p>
 
             <div className="hero__quote-box">
               <p className="hero__quote-text">
-                &ldquo;If I don&apos;t know it now, doesn&apos;t mean I never will. I&apos;ll figure it out and get stuff done.&rdquo;
+                &ldquo;If I don&apos;t know it now, doesn&apos;t mean I never will.
+                <span style={{ display: 'block', marginTop: '0.4rem' }}>
+                  I will figure it out and get stuff done.&rdquo;
+                </span>
               </p>
             </div>
 
