@@ -3,6 +3,21 @@ import './Achievements.css';
 const achievements = [
   {
     id: '01',
+    tag: 'ACADEMIC',
+    title: 'Dean’s List for Academic Excellence — 9.89 GPA',
+    organization: 'Manipal University Jaipur · Department of Computer Science & Engineering (B.Tech CSE)',
+    date: 'July 2026',
+    description: 'Awarded the prestigious Dean’s List honor for achieving the highest grade point average (9.8948 GPA) in the first year of the B.Tech Computer Science & Engineering program.',
+    highlights: [
+      'Achieved a stellar 9.8948 Semester Grade Point Average (GPA) across rigorous foundational B.Tech Computer Science & Engineering courses.',
+      'Honoured by Dean FoSTA (Faculty of Science, Technology & Architecture) and First Year B.Tech Coordinator for outstanding academic excellence.',
+      'Successfully balanced top-tier academic performance with rigorous nationwide hackathon podium finishes and solo full-stack engineering.',
+    ],
+    certificate: '/deans-list-cert.jpg',
+  },
+  {
+    id: '02',
+    tag: 'RESEARCH & AI',
     title: 'Rank 2 (Runner-Up) — AI for Public Good: Sustainable & Resilient Supply Chains Hackathon',
     organization: 'Indo-Swiss Research Grant · ETH Zurich × Univ. of Lausanne × IIIT Allahabad × Manipal University Jaipur',
     date: 'June 2026',
@@ -17,7 +32,8 @@ const achievements = [
       'https://unstop.com/o/UNtyVfK?lb=vh1cghwj&utm_medium=Share&utm_source=online_coding_challenge&utm_campaign=Srishtiz32356',
   },
   {
-    id: '02',
+    id: '03',
+    tag: 'CYBERSECURITY',
     title: 'Rank 42 — Confluence 2.0 International Innovation Hackathon',
     organization: 'SRMIST (The Helper) · Cybersecurity & Threat Intelligence',
     date: 'June 2026',
@@ -32,7 +48,8 @@ const achievements = [
     video: 'https://youtu.be/osFoCaGa9Wc',
   },
   {
-    id: '03',
+    id: '04',
+    tag: 'CYBERSECURITY',
     title: 'Finalist — National Secure AI Software & Systems Hackathon',
     organization: 'IIT Madras × BITS Goa (ISEA Phase-III) · Blue Team Challenge',
     date: 'July 2026',
@@ -47,7 +64,8 @@ const achievements = [
       'https://www.linkedin.com/posts/activity-7467806899111927808-Uv8v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
   },
   {
-    id: '04',
+    id: '05',
+    tag: 'WEBATHON',
     title: 'Participant — WebForge Smart Campus Webathon',
     organization: 'IEEE CIS MUJ · Manipal University Jaipur',
     date: 'May 2026',
@@ -62,7 +80,8 @@ const achievements = [
       'https://www.linkedin.com/posts/activity-7477239105538584577-zt23?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
   },
   {
-    id: '05',
+    id: '06',
+    tag: 'AI CHALLENGE',
     title: 'Participant — Spooky AI (Real-Time Phishing Detection Agent)',
     organization: 'Google Gemini Live Agents Challenge · Google Cloud × Devpost',
     date: 'March 2026',
@@ -81,54 +100,60 @@ const Achievements = () => {
   return (
     <section className="achievements" id="achievements">
       <div className="achievements__content container">
-        {/* Header */}
+        {/* Editorial Header */}
         <div className="achievements__header reveal">
+          <div className="achievements__header-top">
+            <span className="achievements__header-accent-line"></span>
+            <span className="achievements__label">DISTINCTIONS & HONORS</span>
+          </div>
           <h2 className="achievements__heading">Achievements</h2>
-          <p className="achievements__label">Milestones & Honors</p>
+          <p className="achievements__subheading">
+            A curated timeline of academic excellence, research contributions, and
+            competitive technical milestones achieved through rigorous inquiry and engineering.
+          </p>
         </div>
 
-        {/* List */}
+        {/* Horizontal Timeline Rows */}
         <div className="achievements__list">
           {achievements.map((item) => (
-            <div className="achievements__card reveal" key={item.id}>
-              {/* Giant Watermark */}
-              <span className="achievements__watermark">{item.id}</span>
+            <div className="achievements__row reveal" key={item.id}>
+              {/* 1. Left Index */}
+              <div className="achievements__row-number">{item.id}</div>
 
-              <div className="achievements__top">
-                <div className="achievements__meta">
-                  <span className="achievements__org">{item.organization}</span>
-                  <span className="achievements__date">{item.date}</span>
+              {/* 2. Main Editorial Content */}
+              <div className="achievements__row-main">
+                <div className="achievements__meta-row">
+                  <span className="achievements__badge">{item.tag || 'HONOR'}</span>
+                  <span className="achievements__row-date">{item.date}</span>
                 </div>
-                <h3 className="achievements__title">{item.title}</h3>
-              </div>
 
-              {item.description && (
-                <p className="achievements__description">{item.description}</p>
-              )}
+                <h3 className="achievements__row-title">{item.title}</h3>
 
-              {item.highlights && (
-                <ul className="achievements__highlights">
-                  {item.highlights.map((point, idx) => (
-                    <li key={idx} className="achievements__highlight-item">
-                      <span className="achievements__bullet">▸</span>
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
+                {item.description && (
+                  <p className="achievements__row-desc">{item.description}</p>
+                )}
 
-              <div className="achievements__divider"></div>
+                {item.highlights && (
+                  <ul className="achievements__row-highlights">
+                    {item.highlights.map((point, idx) => (
+                      <li key={idx} className="achievements__row-highlight-item">
+                        <span className="achievements__dot">●</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
 
-              <div className="achievements__bottom">
-                <div className="achievements__links">
+                {/* Action Links */}
+                <div className="achievements__row-links">
                   {item.certificate && (
                     <a
                       href={item.certificate}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="achievements__link"
+                      className="achievements__link-btn"
                     >
-                      View Certificate <span>↗</span>
+                      VIEW CERTIFICATE <span>↗</span>
                     </a>
                   )}
                   {item.architecture && (
@@ -136,19 +161,9 @@ const Achievements = () => {
                       href={item.architecture}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="achievements__link"
+                      className="achievements__link-btn"
                     >
-                      System Architecture <span>↗</span>
-                    </a>
-                  )}
-                  {item.video && (
-                    <a
-                      href={item.video}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="achievements__link"
-                    >
-                      Watch Demo <span>↗</span>
+                      SYSTEM ARCHITECTURE <span>↗</span>
                     </a>
                   )}
                   {item.unstop && (
@@ -156,9 +171,9 @@ const Achievements = () => {
                       href={item.unstop}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="achievements__link"
+                      className="achievements__link-btn"
                     >
-                      Official Leaderboard <span>↗</span>
+                      OFFICIAL LEADERBOARD <span>↗</span>
                     </a>
                   )}
                   {item.devpost && (
@@ -166,9 +181,19 @@ const Achievements = () => {
                       href={item.devpost}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="achievements__link"
+                      className="achievements__link-btn"
                     >
-                      Devpost Participant Page <span>↗</span>
+                      DEVPOST SUBMISSION <span>↗</span>
+                    </a>
+                  )}
+                  {item.video && (
+                    <a
+                      href={item.video}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="achievements__link-btn"
+                    >
+                      WATCH DEMO <span>↗</span>
                     </a>
                   )}
                   {item.linkedin && (
@@ -176,9 +201,9 @@ const Achievements = () => {
                       href={item.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="achievements__link"
+                      className="achievements__link-btn"
                     >
-                      LinkedIn Story <span>↗</span>
+                      LINKEDIN STORY <span>↗</span>
                     </a>
                   )}
                 </div>
