@@ -61,6 +61,20 @@ const achievements = [
     linkedin:
       'https://www.linkedin.com/posts/activity-7477239105538584577-zt23?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6B1lgBLs0M8HXew_JCb16LQOxhfGh-FcE',
   },
+  {
+    id: '05',
+    title: 'Participant — Spooky AI (Real-Time Phishing Detection Agent)',
+    organization: 'Google Gemini Live Agents Challenge · Google Cloud × Devpost',
+    date: 'March 2026',
+    description: 'Hackathon challenge on Devpost focused on building real-time multimodal AI agents using Gemini.',
+    highlights: [
+      'Architected and submitted Spooky AI, a real-time multimodal cybersecurity agent that continuously monitors screen activity to detect and intercept phishing threats.',
+      'Integrated Gemini 2.5 Flash-Lite, automated PyAutoGUI screen capture, and Tesseract OCR to analyze visual context and trigger instant fullscreen alert overlays.',
+      'Built interactive voice Q&A capabilities and cloud threat logging synced in real-time to a Firebase Firestore dashboard.',
+    ],
+    video: 'https://youtu.be/uWbJxuC943M',
+    devpost: 'https://share.google/l6LNxiuy9AvKGZQrF',
+  },
 ];
 
 const Achievements = () => {
@@ -145,6 +159,16 @@ const Achievements = () => {
                       className="achievements__link"
                     >
                       Official Leaderboard <span>↗</span>
+                    </a>
+                  )}
+                  {item.devpost && (
+                    <a
+                      href={item.devpost}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="achievements__link"
+                    >
+                      Devpost Participant Page <span>↗</span>
                     </a>
                   )}
                   {item.linkedin && (

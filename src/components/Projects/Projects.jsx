@@ -38,6 +38,7 @@ const projects = [
     github: 'https://github.com/Srishti-Gupta74/Spooky',
     live: 'https://spooky-blue.vercel.app/',
     video: 'https://youtu.be/uWbJxuC943M',
+    devpost: 'https://share.google/l6LNxiuy9AvKGZQrF',
   },
   {
     id: '05',
@@ -106,6 +107,16 @@ const Projects = () => {
                       className="projects__link"
                     >
                       Watch Demo <span>↗</span>
+                    </a>
+                  )}
+                  {project.devpost && (
+                    <a
+                      href={project.devpost}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="projects__link"
+                    >
+                      Devpost <span>↗</span>
                     </a>
                   )}
                   {project.github && (
