@@ -1,0 +1,209 @@
+/* ===== Education Editorial Section (Exact Reference Layout) ===== */
+.education {
+  padding: 6rem 0 7rem;
+  background-color: var(--background);
+  position: relative;
+}
+
+.education__content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.education__header {
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+}
+
+.education__label {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #b0b0a8;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.education__heading {
+  font-family: var(--font-display);
+  font-size: clamp(3.4rem, 6.5vw, 5.2rem);
+  font-weight: 400;
+  color: var(--foreground);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+/* Horizontal Timeline Rows with Vertical Rail */
+.education__list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ededeb;
+}
+
+.education__row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  border-bottom: 1px solid #ededeb;
+  align-items: stretch;
+  transition: background-color 0.4s ease;
+}
+
+.education__row:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 1. Left Vertical Rail Index Number (`01`, `02`, `03`) */
+.education__row-number {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-size: clamp(3.2rem, 4.5vw, 4.4rem);
+  color: #1a1a1f;
+  font-weight: 400;
+  line-height: 1;
+  padding: 3.5rem 0;
+  border-right: 1px solid #ededeb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: transform 0.4s var(--ease-out), color 0.4s ease;
+}
+
+.education__row:hover .education__row-number {
+  transform: translateY(-4px);
+}
+
+/* 2. Main Center Content */
+.education__row-main {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem 0 3.5rem 3.5rem;
+}
+
+.education__meta-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.education__badge {
+  background-color: #1a1a1f;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  padding: 0.3rem 0.65rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.education__row-period {
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: #888888;
+}
+
+.education__header-split {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+}
+
+.education__row-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 2.8vw, 2.35rem);
+  font-weight: 400;
+  color: #1a1a1f;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.education__grade-pill {
+  background-color: #f3f3f1;
+  border: 1px solid #dededb;
+  color: #1a1a1f;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 0.38rem 0.85rem;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.education__institution {
+  font-family: var(--font-sans);
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #55555c;
+  margin-bottom: 1rem;
+}
+
+.education__row-desc {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.12rem;
+  color: #6b6b76;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 780px;
+}
+
+.education__row-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.education__row-highlight-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  font-size: 0.94rem;
+  color: #333338;
+  line-height: 1.6;
+}
+
+.education__dot {
+  color: #b0b0a8;
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Responsive Grid Collapse */
+@media (max-width: 768px) {
+  .education__row {
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid #ededeb;
+  }
+
+  .education__row-number {
+    border-right: none;
+    border-bottom: 1px solid #ededeb;
+    padding: 1.5rem 0;
+    justify-content: flex-start;
+    font-size: 2.8rem;
+  }
+
+  .education__row-main {
+    padding: 2.5rem 0;
+  }
+
+  .education__header-split {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}

@@ -14,11 +14,11 @@ const arsenal = [
 ];
 
 const levelingUp = [
-  'Artificial Intelligence',
-  'Data Structures & Algorithms',
-  'Cybersecurity',
-  'Web Development',
   'Software Engineering',
+  'Web Development',
+  'Data Structures & Algorithms',
+  'Artificial Intelligence',
+  'Cybersecurity',
   'Open Source',
 ];
 

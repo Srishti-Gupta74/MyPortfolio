@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import SkillsMarquee from './components/SkillsMarquee/SkillsMarquee';
 import Experience from './components/Experience/Experience';
+import Education from './components/Education/Education';
 import TechStack from './components/TechStack/TechStack';
 import Projects from './components/Projects/Projects';
 import Achievements from './components/Achievements/Achievements';
@@ -35,6 +36,7 @@ function App() {
         <Hero />
         <SkillsMarquee />
         <Experience />
+        <Education />
         <TechStack />
         <Projects />
         <Achievements />

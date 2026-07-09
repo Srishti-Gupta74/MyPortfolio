@@ -18,6 +18,8 @@ const Navbar = () => {
         <div className="navbar__links" id="navbar-links">
           <a href="#home" className="navbar__link">Home</a>
           <a href="#about" className="navbar__link">About</a>
+          <a href="#experience" className="navbar__link">Experience</a>
+          <a href="#education" className="navbar__link">Education</a>
           <a href="#skills" className="navbar__link">Skills</a>
           <a href="#projects" className="navbar__link">Projects</a>
           <a href="#achievements" className="navbar__link">Achievements</a>
