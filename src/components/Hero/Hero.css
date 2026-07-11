@@ -35,21 +35,6 @@
   text-wrap: balance;
 }
 
-.hero__float-group {
-  display: inline-block;
-  animation: floatGroup 5.2s ease-in-out infinite;
-  filter: drop-shadow(0 12px 18px rgba(26, 26, 31, 0.12));
-}
-
-@keyframes floatGroup {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-8px) rotate(-0.8deg);
-  }
-}
-
 .hero__title-accent {
   font-weight: 400;
   font-style: italic;

@@ -3,6 +3,16 @@ import './Projects.css';
 const projects = [
   {
     id: '01',
+    title: 'SwarmOS',
+    description:
+      'Autonomous space infrastructure operating system & decentralized swarm intelligence simulation platform. Orchestrates peer-to-peer satellite networks for collision avoidance, orbital intelligence, and self-healing constellations.',
+    tech: ['TypeScript', 'Next.js', 'AI Swarm', 'Orbital Sim'],
+    github: 'https://github.com/Srishti-Gupta74/SwarmOS.git',
+    live: 'https://swarm-os-green.vercel.app/',
+    video: 'https://youtu.be/NXE_kSIRdZk?si=8xXzPJfGqZb-DHXR',
+  },
+  {
+    id: '02',
     title: 'CyberSiksha',
     description:
       'Cybersecurity awareness and education platform designed especially for children and the elderly. Features bite-sized cyber lessons, gamified quizzes, a family dashboard, and AI threat simulation.',
@@ -12,7 +22,7 @@ const projects = [
     video: 'https://youtu.be/osFoCaGa9Wc',
   },
   {
-    id: '02',
+    id: '03',
     title: 'DeskGuard',
     description:
       'Smart library seat management system with QR-based seat booking, real-time occupancy tracking, and automated seat recovery to solve seat hoarding.',
@@ -22,7 +32,7 @@ const projects = [
     video: 'https://youtu.be/HmawrT7Bu8g?si=mJZCg-p-RpNxfjU6',
   },
   {
-    id: '03',
+    id: '04',
     title: 'Spooky',
     description:
       'Multimodal AI cybersecurity guardian that monitors your screen in real time, runs OCR to detect suspicious keywords, and triggers fullscreen alerts for phishing.',
@@ -33,7 +43,7 @@ const projects = [
     devpost: 'https://share.google/l6LNxiuy9AvKGZQrF',
   },
   {
-    id: '04',
+    id: '05',
     title: 'InterviewSim',
     description:
       'AI-powered mock interview simulator that helps users prepare for technical and behavioral interviews with instant feedback and real scenarios.',
@@ -43,7 +53,7 @@ const projects = [
     video: 'https://youtu.be/bBofdpzKsHk',
   },
   {
-    id: '05',
+    id: '06',
     title: 'ForgeShield',
     description:
       'Forgery detection & document authentication tool. Uses image analysis techniques to identify inconsistencies and protect against digital forgery.',
