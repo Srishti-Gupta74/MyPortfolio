@@ -13,6 +13,7 @@ const arsenal = [
 
 const aiCompetencies = [
   { name: 'Generative AI & LLMs', tag: 'COMPETENCY' },
+  { name: 'Interactive 3D Simulations', tag: 'SIMULATION' },
   { name: 'Prompt Engineering', tag: 'WORKFLOW' },
   { name: 'Multimodal AI & OCR', tag: 'COMPUTER VISION' },
   { name: 'AI Agent Workflows', tag: 'AUTOMATION' },
