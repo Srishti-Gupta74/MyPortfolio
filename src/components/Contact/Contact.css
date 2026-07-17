@@ -1,11 +1,11 @@
 /* ===== Contact / Footer Section ===== */
 .contact {
-  padding: 6rem 0 3rem;
+  padding: 1.5rem 0 2rem;
 }
 
 @media (min-width: 1024px) {
   .contact {
-    padding: 8rem 0 4rem;
+    padding: 2rem 0 2.5rem;
   }
 }
 
@@ -13,50 +13,50 @@
 .contact__card {
   background-color: var(--foreground);
   color: var(--background);
-  border-radius: clamp(1.5rem, 3vw, 2.5rem);
-  padding: 4rem 1.5rem;
+  border-radius: clamp(1.25rem, 2vw, 1.8rem);
+  padding: 2.25rem 1.5rem;
   text-align: center;
-  box-shadow: 0 20px 40px -15px rgba(26, 26, 31, 0.15);
+  box-shadow: 0 16px 36px -12px rgba(26, 26, 31, 0.15);
 }
 
 @media (min-width: 768px) {
   .contact__card {
-    padding: 6rem 3rem;
+    padding: 3rem 2.5rem;
   }
 }
 
 .contact__card-inner {
-  max-width: 56ch;
+  max-width: 52ch;
   margin: 0 auto;
 }
 
 .contact__heading {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
   font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 2rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
   color: #ffffff;
   letter-spacing: -0.01em;
 }
 
 .contact__description {
-  color: rgba(250, 250, 249, 0.65);
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
-  line-height: 1.6;
-  margin: 0 auto 3rem;
+  color: rgba(250, 250, 249, 0.7);
+  font-size: clamp(0.92rem, 1.2vw, 1.05rem);
+  line-height: 1.55;
+  margin: 0 auto 1.5rem;
   text-wrap: pretty;
 }
 
 .contact__email {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
   color: #ffffff;
   text-decoration: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0.8);
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.2rem;
   transition: all 0.25s ease;
   display: inline-block;
 }
