@@ -1,12 +1,13 @@
 /* ===== Hero Section ===== */
 .hero {
-  padding-top: 12rem;
-  padding-bottom: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 3.5rem;
 }
 
 @media (min-width: 1024px) {
   .hero {
-    padding-top: 16rem;
+    padding-top: 8.5rem;
+    padding-bottom: 4rem;
   }
 }
 
