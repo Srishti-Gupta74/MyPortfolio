@@ -1,6 +1,6 @@
 /* ===== Achievements Editorial Section (Exact Reference Design) ===== */
 .achievements {
-  padding: 3.5rem 0 4.5rem;
+  padding: 1.5rem 0 2rem;
   background-color: var(--background);
   position: relative;
 }
@@ -13,7 +13,7 @@
 /* Header */
 .achievements__header {
   margin-bottom: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .achievements__label {
@@ -79,11 +79,11 @@
 .achievements__row-number {
   font-family: var(--font-display);
   font-style: normal;
-  font-size: clamp(3.2rem, 4.5vw, 4.4rem);
+  font-size: clamp(2.6rem, 3.5vw, 3.5rem);
   color: #1a1a1f;
   font-weight: 400;
   line-height: 1;
-  padding: 3.5rem 0;
+  padding: 1.75rem 0;
   border-right: 1px solid #ededeb;
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@
 .achievements__row-main {
   display: flex;
   flex-direction: column;
-  padding: 3.5rem 0 3.5rem 3.5rem;
+  padding: 1.75rem 0 1.75rem 2.5rem;
 }
 
 .achievements__meta-row {

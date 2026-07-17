@@ -1,6 +1,6 @@
 /* ===== Certifications Section ===== */
 .certifications {
-  padding: 3.5rem 0 4.5rem;
+  padding: 1.5rem 0 2rem;
   background-color: var(--background);
   position: relative;
   border-top: 1px solid rgba(26, 26, 31, 0.06);
@@ -12,7 +12,7 @@
 
 /* Header */
 .certifications__header {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .certifications__heading {

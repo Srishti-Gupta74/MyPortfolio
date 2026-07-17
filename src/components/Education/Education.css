@@ -1,6 +1,6 @@
 /* ===== Education Editorial Section (Exact Reference Layout) ===== */
 .education {
-  padding: 3.5rem 0 4.5rem;
+  padding: 1.5rem 0 2rem;
   background-color: var(--background);
   position: relative;
 }
@@ -13,7 +13,7 @@
 /* Header */
 .education__header {
   margin-bottom: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .education__label {
