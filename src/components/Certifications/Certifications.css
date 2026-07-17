@@ -1,6 +1,6 @@
 /* ===== Certifications Section ===== */
 .certifications {
-  padding: var(--section-padding) 0;
+  padding: 3.5rem 0 4.5rem;
   background-color: var(--background);
   position: relative;
   border-top: 1px solid rgba(26, 26, 31, 0.06);

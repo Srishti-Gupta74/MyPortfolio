@@ -30,7 +30,7 @@ const levelingUp = [
 
 const TechStack = () => {
   return (
-    <section className="techstack" id="stack">
+    <section className="techstack" id="skills">
       <div className="techstack__content container">
         {/* Editorial Header */}
         <div className="techstack__header reveal">

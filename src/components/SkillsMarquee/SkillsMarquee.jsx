@@ -24,7 +24,7 @@ const skills = [
 
 const SkillsMarquee = () => {
   return (
-    <section className="marquee" id="skills">
+    <section className="marquee" id="marquee">
       <div className="marquee__track">
         <div className="marquee__content">
           {/* Render skills twice for seamless looping */}

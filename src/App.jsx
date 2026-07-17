@@ -35,12 +35,12 @@ function App() {
       <main>
         <Hero />
         <SkillsMarquee />
-        <Experience />
-        <Education />
         <TechStack />
         <Projects />
         <Achievements />
+        <Education />
         <Certifications />
+        <Experience />
         <Contact />
       </main>
     </>
